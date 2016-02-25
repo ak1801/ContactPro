@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:background="@color/smokeWhite" >
+        
+         <!-- Editext for Search -->
+    	<EditText android:id="@+id/inputSearch"
+        	android:layout_width="260dp"
+        	android:layout_height="wrap_content"
+        	android:hint="Search contacts.."
+        	android:inputType="textVisiblePassword"/>
+    	
+    	<ImageView
+            android:id="@+id/icon_add"
+            android:layout_width="50dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/inputSearch"
+            android:gravity="center_vertical"
+            android:src="@drawable/add_48" 
+            android:onClick="onClick"/>
+
+    	<!-- <ProgressBar
+    	    android:id="@+id/progressBar1"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:layout_alignParentTop="true"
+    	    android:layout_alignRight="@+id/inputSearch"
+    	    android:layout_marginRight="94dp" /> -->
+
+    </RelativeLayout>
+    
+        <ListView
+            android:id="@android:id/list"
+            android:layout_width="match_parent"
+            android:layout_height="380dp"
+            android:layout_below="@+id/textView1" >
+
+        </ListView>
+
+</LinearLayout>

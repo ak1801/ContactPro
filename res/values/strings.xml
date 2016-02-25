@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ContactsAdd</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">Add Contact Demo</string>
+    <string name="hnt_et_name">Display Name</string>
+    <string name="hnt_et_middle">Middle Name</string>
+    <string name="hnt_et_last">Last Name</string>
+    <string name="hnt_et_mobile_phone">Mobile Phone</string>
+    <string name="hnt_et_home_phone">Home Phone</string>
+    <string name="hnt_et_home_email">Home Email</string>
+    <string name="hnt_et_work_email">Work Email</string>
+    <string name="str_btn_add">Add Contact</string>
+    <string name="str_btn_contacts">Contacts List</string>
+    <string name="str_title_name">Name</string>
+    <string name="str_title_phone">Phone</string>
+    <string name="str_title_email">Email</string>
+        
+
+</resources>

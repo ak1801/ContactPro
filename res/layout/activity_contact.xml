@@ -1,0 +1,166 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ContactActivity" >
+    
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="@string/str_title_name"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_below="@+id/imageView1"
+        android:textColor="@color/shadedblue" />
+    
+    <View
+        android:id="@+id/view1"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/textView1"
+        android:background="@color/shadedblue" />
+        <!-- android:layout_alignParentTop="true" -->
+    
+     <EditText
+        android:id="@+id/et_name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:layout_below="@+id/view1"        
+        android:hint="@string/hnt_et_name" />
+    
+     <!-- <EditText
+        android:id="@+id/et_middle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:layout_below="@+id/et_name"        
+        android:hint="@string/hnt_et_middle" />
+     
+     <EditText
+        android:id="@+id/et_last"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:layout_below="@+id/et_middle"        
+        android:hint="@string/hnt_et_last" /> -->
+     
+     <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="@string/str_title_phone"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_below="@+id/et_name" 
+        android:textColor="@color/shadedblue" />
+    
+    <View
+        android:id="@+id/view2"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/textView2"
+        android:background="@color/shadedblue" />
+        <!-- android:layout_alignParentTop="true" -->
+        
+    <EditText
+        android:id="@+id/et_mobile_phone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"  
+        android:layout_below="@id/textView2"     
+        android:inputType="phone" 
+        android:hint="@string/hnt_et_mobile_phone" 
+        />
+    
+    <EditText
+        android:id="@+id/et_home_phone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_mobile_phone"
+        android:inputType="phone"        
+        android:hint="@string/hnt_et_home_phone"
+        android:visibility="gone" 
+        />
+    
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="@string/str_title_email"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_below="@+id/et_home_phone" 
+        android:textColor="@color/shadedblue" 
+        android:visibility="gone"/>
+    
+    <View
+        android:id="@+id/view3"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/textView3"
+        android:background="@color/shadedblue" 
+        android:visibility="gone"/>
+        <!-- android:layout_alignParentTop="true" -->
+        
+    <EditText
+        android:id="@+id/et_work_email"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"     
+        android:layout_below="@id/view3"
+        android:inputType="textEmailAddress"   
+        android:hint="@string/hnt_et_work_email" 
+        android:visibility="gone"/>
+    
+    <EditText
+        android:id="@+id/et_home_email"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"   
+        android:layout_below="@id/et_work_email"
+        android:inputType="textEmailAddress"     
+        android:hint="@string/hnt_et_home_email" 
+        android:visibility="gone"/>
+    
+    <!-- <Button
+        android:id="@+id/btn_add"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"   
+        android:layout_below="@id/et_home_email"
+        android:text="@string/str_btn_add" /> -->
+
+    <ImageView
+        android:id="@+id/icon_add"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"   
+        android:layout_below="@id/et_home_email"
+        android:src="@drawable/btn_add" 
+         />
+    
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/textView2"
+        android:src="@drawable/no_img" 
+        ></ImageView>
+    
+    <ImageView
+            android:id="@+id/icon_back"
+            android:layout_width="50dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/imageView1"
+            android:gravity="center_vertical"
+            android:src="@drawable/back" 
+            android:onClick="onClick"/>
+
+    <!-- <ProgressBar
+        android:id="@+id/progressBar1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/et_home_phone"
+        android:layout_centerHorizontal="true" /> -->
+
+</RelativeLayout>
